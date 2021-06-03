@@ -4,4 +4,4 @@
 - HTML
 - CSS
 - JavaScript
-- Swiper (JS)
+- Swiper Slider JS
