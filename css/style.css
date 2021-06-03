@@ -1,0 +1,217 @@
+* {
+	font-family:  'Roboto', sans-serif;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	margin: 0;
+}
+
+.header {
+	margin: 14px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .logo a {
+	font-size: 60px;
+	line-height: 70px;
+	color: #890043;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.header .menu {
+	list-style-type: none;
+}
+
+.header .menu li {
+	display: inline-block;
+}
+
+.header .menu li a {
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 23px;
+	color: #000000;
+	margin-right: 16px;
+	transition: .4s /* отвечает за плавность анимации */
+}
+
+.header .menu li a:hover {
+	color: rgb(120, 120, 120);
+	cursor: pointer;
+}
+
+.buttons {
+	margin-left: 122px;
+}
+
+.buttons a{
+	margin-right: 39px;
+}
+
+.buttons a:last-child {
+	margin-right: 0;
+}
+
+.buttons a:hover {
+	cursor: pointer;
+}
+
+.slider {
+	width: 1204px;
+	height: 600px; 
+}
+
+.slide {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; /* выравнивание по горизонтали */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; /* выравнивание по вертикали*/	
+}
+
+.description-slide .slide-image {
+	width: 1204px;
+	height: 600px;
+}
+
+.description-slide .slide-text {
+	position: absolute;
+	font-size: 60px;
+	line-height: 70px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #A52959;
+	left: 676px;
+	top: 211px;
+	font-weight: bold;
+
+}
+
+.description-slide a.slide-btn {
+	position: absolute;
+	width: 234px;
+	height: 59px;
+	left: 785px;
+	top: 307px;
+	background-color: #A52959;
+	border-radius: 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 30px;
+	line-height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.description-slide a.slide-btn:hover {
+	opacity: 0.9;
+}
+
+.btn-controls {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 7px;
+}
+
+.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	background-color: #606060;
+	cursor: pointer;
+}
+
+
+
+
+.proposal {
+	margin-top: 51px;
+	width: 100%;
+	height: 614px;
+	background: #E93A90;
+}
+
+.proposal h2.title {
+	padding-top: 24px;
+	margin-left: 98px;
+	margin-bottom: 9px;
+	font-size: 40px;
+	line-height: 47px;
+	color: #FFFFFF;
+}
+
+hr {
+	height: 5px;
+	background-color:  #FFFFFF;
+	margin-bottom: 15px;
+}
+
+:root {
+    --swiper-navigation-size: 20px;
+    --swiper-theme-color: #ffffff;
+}
+
+.slide-proposal {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; /* выравнивание по горизонтали */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; /* выравнивание по вертикали*/	
+
+}
+
+a.slide-proposal-ct {
+	display: flex;
+	height: 496px;
+	width: 335px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	overflow: hidden;
+	color: #000000;
+}
+
+a.slide-proposal-ct:hover {
+	box-shadow: 14px 14px 5px #890043;
+}
+
+.slide-proposal-ct img.proposal-image {
+	margin: 0 auto;
+	width: 335px;
+	height: 400px;
+	flex-shrink: 0;
+	position: relative;
+}
+
+.slide-proposal-ct h4.name-product {
+	position: absolute;
+	font-size: 30px;
+	line-height: 35px;
+	padding-top: 405px;
+	padding-left: 11px;
+}
+
+.slide-proposal-ct p.price {
+	position: absolute;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 47px;
+	padding-top: 445px;
+	padding-left: 111px;
+}
