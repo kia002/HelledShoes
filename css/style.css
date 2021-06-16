@@ -643,10 +643,7 @@ img.icon-youtube {
 
 .firma {
 	float: left;
-}
-
-.articul {
-	float: right;
+	margin-right: 227px;
 }
 
 .modal-price {
@@ -656,8 +653,8 @@ img.icon-youtube {
 .old-price {
 	font-size: 30px;
 	color: #000000;
-	width: 128px;
-	margin-left: 325px;
+	width: 320px;
+	margin-left: 290px;
 }
 
 .old {
@@ -666,8 +663,7 @@ img.icon-youtube {
 	height: 1px;
 	transform: rotate(163.58deg);
 	margin-top: -20px;
-	margin-left: 325px;
-
+	margin-left: 290px;
 }
 
 .new-price {
