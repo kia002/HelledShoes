@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HelledShoes</title>
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -62,7 +63,7 @@
 		                	</div>
 
 		                	<div class="swiper-slide slide-proposal">
-		                		<a href="#" class="slide-proposal-ct">
+		                		<a data-fancybox data-src="#modal" href="javascript:;" class="slide-proposal-ct">
 		                			<img class="proposal-image" src="img/W2178003_001.jpg" alt="T. Racardi на низком каблуке">
 		                			<h4 class="name-product">T. Raccardi</h4>
 		                			<p class="price">799 р.</p>
@@ -157,10 +158,124 @@
 			</div>
         </footer>
 
-            	
+        <div class="modal" id='modal'>
+			<div class="swiper-container mini-slider">
+            	  <!-- Обертка слайдов -->
+              	<div class="swiper-wrapper swiper-wrapper-mini">
+                	<!-- Слайды -->
+                	<div class="swiper-slide mini-slide">
+                		<img class="mini-image" src="img/W2178003_001.jpg" alt="Вид спереди">
+                	</div>
+                	<!-- /.swiper-slide -->
+
+                	<div class="swiper-slide mini-slide">
+                		<img class="mini-image" src="img/W2178003_002.jpg" alt="Вид сверху">
+                	</div>
+                	<!-- /.swiper-slide -->
+
+                	<div class="swiper-slide mini-slide">
+                		<img class="mini-image" src="img/W2178003_003.jpg" alt="Вид снизу">
+                	</div>
+                	<!-- /.swiper-slide -->
+
+                	<div class="swiper-slide mini-slide">
+                		<img class="mini-image" src="img/W2178003_004.jpg" alt="Вид сверху">
+                	</div>
+                	<!-- /.swiper-slide -->
+        		</div>
+        		<!-- /.swiper-wrapper -->
+       		</div>
+        	<!-- /.swiper-container -->
+
+        	<div class="swiper-container modal-slider">
+            	  <!-- Обертка слайдов -->
+              	<div class="swiper-wrapper">
+                	<!-- Слайды -->
+                	<div class="swiper-slide modal-slide">
+                		<img class="modal-image" src="img/W2178003_001.jpg" alt="Вид спереди">
+                	</div>
+                	<!-- /.swiper-slide -->
+
+                	<div class="swiper-slide modal-slide">
+                		<img class="modal-image" src="img/W2178003_002.jpg" alt="Вид сверху">
+                	</div>
+                	<!-- /.swiper-slide -->
+
+                	<div class="swiper-slide modal-slide">
+                		<img class="modal-image" src="img/W2178003_003.jpg" alt="Вид снизу">
+                	</div>
+                	<!-- /.swiper-slide -->
+
+                	<div class="swiper-slide modal-slide">
+                		<img class="modal-image" src="img/W2178003_004.jpg" alt="Вид сверху">
+                	</div>
+                	<!-- /.swiper-slide -->
+        		</div>
+        		<!-- /.swiper-wrapper -->
+       		</div>
+        	<!-- /.swiper-container -->
+        	
+        	<div class="modal-description">
+        		<div class="modal-title">
+					<h2 class="name">Туфли женские WR-452</h2>
+					<h4 class="firma">T. Racardi</h4>
+					<h4 class="articul">арт. 5487845</h4>
+				</div>
+				<div class="modal-price">
+					<p class="old-price">1999 руб.<hr class="old"></p>
+					<p class="new-price">799 руб.</p>
+				</div>
+				<div class="size">
+					<h3 class="choice">Выберите размер</h3>
+					<button class="choice-size">37</button>
+					<button class="choice-size">38</button>
+					<button class="choice-size">39</button>
+					<button class="choice-size">40</button>
+					<button class="choice-size">41</button>
+				</div>
+				<!-- /.size -->
+				<div class="deliver">
+					<h3 class="deliver-title">Выберите способ доставки</h3>
+					<div class="deliver-means">
+						<div class="deliver-drive">
+							<img src="img/self-locomotive.png" class="deliver-icon">
+							<p class="deliver-description">Самовывоз</p>
+						</div>
+					</div>
+					<!-- /.deliver-means -->
+
+					<div class="deliver-means">
+						<div class="deliver-dostavka">
+							<img src="img/deliver.png" class="deliver-icon">
+							<p class="deliver-description">Доставка 1&ndash;2 дня</p>
+						</div>
+					</div>
+					<!-- /.deliver-means -->
+
+					<div class="deliver-means">
+						<div class="deliver-email">
+							<img src="img/email.png" class="deliver-icon">
+							<p class="deliver-description">Почта РФ до отделенмя</p>
+						</div>
+					</div>
+					<!-- /.deliver-means -->
+				</div>
+				<!-- /.deliver -->
+        	</div>
+        	<!-- modal-description -->
+        	
+
+			<div class="specs">
+				<h3 class="specs-title">Характеристики товара:</h3>
+				<p class="specs-description">Модель: WR-452<br>Материал вреха: искусственная кожа<br>Материал подошвы: резина<br>Цвет: черный<br>Каблук: 5 см</p>
+			</div>
+		</div>  
+		<!-- /.modal -->	
 
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

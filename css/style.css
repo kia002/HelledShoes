@@ -577,3 +577,181 @@ img.icon-youtube {
 	text-align: center;
 	padding-bottom: 52px;
 }
+
+/* открытие товара */
+.modal {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.mini-slider {
+	display: inline-block;
+    width: 104px;
+    margin-left: 57px;
+    margin-top: 46px;
+}
+
+.mini-image {
+	height: 144.36px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.swiper-wrapper-mini .swiper-slide-thumb-active {
+	border: 2px solid #890043;
+	border-radius: 15px;
+}
+
+.modal-slider {
+	display: inline-block;
+    height: 500px;
+    width: 346.36px;
+    margin-left: 45px;
+    margin-top: 155px;
+    vertical-align: top;
+}
+
+.mini-slide {
+	height: 149.36px !important;
+}
+
+.modal-image {
+	height: 500px;
+    width: 346.36px;
+}
+
+.modal-description {
+	display: inline-block;
+	margin-top: 84px;
+	margin-left: 20px;
+	vertical-align: top;
+}
+
+.name {
+	font-size: 50px;
+	color: #890043;
+	margin-bottom: 3px;
+}
+
+.firma, .articul {
+	font-size: 30px;
+	color: #000;
+	margin-bottom: 55px;
+}
+
+.firma {
+	float: left;
+}
+
+.articul {
+	float: right;
+}
+
+.modal-price {
+	margin-top: 55px;
+}
+
+.old-price {
+	font-size: 30px;
+	color: #000000;
+	width: 128px;
+	margin-left: 325px;
+}
+
+.old {
+	background-color: #E93A90;
+	width: 70px;
+	height: 1px;
+	transform: rotate(163.58deg);
+	margin-top: -20px;
+	margin-left: 325px;
+
+}
+
+.new-price {
+	margin-top: 7px;
+	font-size: 45px;
+	text-align: center;
+	color: #000000;
+
+}
+
+.choice {
+	font-size: 35px;
+	color: #000000;
+	margin-top: 26px;
+}
+
+.choice-size {
+	margin-top: 14px;
+	width: 98px;
+	height: 45px;
+	color: #000;
+	font-size: 35px;
+	background-color: #FFFFFF;
+	border: 2px solid #E969A8;
+	border-radius: 15px;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.choice-size:last-child {
+	margin-right: 0;
+}
+
+.choice-size:hover {
+	background-color: #E969A8;
+	opacity: 0.8;
+	color: #FFFFFF;
+}
+
+.choice-size:focus {
+	background-color: #E969A8;
+	color: #FFFFFF;
+	border: 2px solid #E969A8;
+	border-radius: 15px;
+}
+
+.deliver {
+	margin-top: 26px;
+}
+
+.deliver-title {
+	font-size: 35px;
+	color: #000000;
+}
+
+.deliver-means	{
+	display: block;
+	margin-top: 12px;
+}
+
+.deliver-dostavka, .deliver-email, .deliver-drive {
+	font-size: 25px;
+}
+
+.deliver-icon {
+	display: inline-block;
+}
+
+.deliver-description {
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.specs {
+	margin-top: 23.64px;
+	margin-left: 107px;
+}
+
+.specs-title {
+	font-size: 35px;
+	margin-bottom: 26px;
+}
+
+.specs-description {
+	font-size: 30px;
+	margin-bottom: 73px;
+}

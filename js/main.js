@@ -19,8 +19,8 @@ $(document).ready(function(){
 
 	const slider_propoisal = new Swiper('.slider-proposal', {
 		// параметры слайдера
-  		loop: true,// Слайдер будет бесконечно работать
-      spaceBetween: 79, // расстояние между слайдами
+  	loop: true,// Слайдер будет бесконечно работать
+    spaceBetween: 79, // расстояние между слайдами
 
 
 		// подключеник стрелок
@@ -41,4 +41,19 @@ $(document).ready(function(){
 
 
   });
+
+
+ const modal_slider = new Swiper ('.modal-slider', {
+    slidesPerView: 1, // Количество видимых слайдов
+    direction: 'vertical', // вертикальный слайдер
+    thumbs: {
+      swiper: {
+        el: '.mini-slider',
+        spaceBetween: 44.64,
+        slidesPerView: 4, // Количество видимых слайдов
+        direction: 'vertical',
+      }
+    },
+  });
+
 });
