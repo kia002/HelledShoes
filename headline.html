@@ -5,7 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Новости</title>
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<script src="js/main.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
@@ -20,7 +26,27 @@
 				<li><a href="#">Больше &gt;</a></li>
 				<li><a href="#">Бренд</a></li>
 			</ul>
+			<div class="user">
+				<a href="#" class="user-info" title="Редактировать профиль">
+					<span class="user-name">Илья</span>
+					<img src="img/avatar.jpg" alt="user" class="user-photo">
+				</a>
+				<a href="#" class="exit">Выход</a>
+				<form class="edit-container">
+					<h2 class="edit-title">Редактировать</h2>
+					<label class="edit-label">Ваш логин 
+						<input type="text" class="edit-input edit-username" name="username" minlength="3" placeholder="Логин" required>
+					</label>
+
+					<label class="edit-label">Ваше фото 
+						<input type="text" class="edit-input edit-photo" name="photo" placeholder="URL-photo">
+					</label>
+					<button class="edit-btn">Сохранить</button>
+				</form>
+			</div>
+			<!-- /.user -->
 			<div class="buttons">
+				<a data-fancybox data-src="#autorization" class="button-authorization" href="javascript:;"><img src="img/user.png" alt="Авторизация"></a>
 				<a href="#"><img src="img/shopping_cart.png" alt="Корзина"></a>
 				<a href="#"><img src="img/search.png" alt="Поиск"></a>
 			</div>
@@ -177,30 +203,19 @@
 				<img src="img/title-icon.png" class="icon-title">
 			</div>
 			<!-- /.headline-title -->
+			<a href=# class="button-new">Добавить новость</a>
+			<form action="#" class="add-new-form">
+				<h2 class="new-title">Новая новость</h2>
+				<input type="text" name="title" class="add-title" placeholder="Заголовок новости">
+				<textarea name="text"class="add-text" placeholder="Текст анонса новости"></textarea>
+				<input type="text" name="trailer" class="add-image" placeholder="Картинка анонса новости">
+				<button type="submit" class="add-input add-new">Добавить новость</button>
+			</form>
+				<!-- /.add-new-form -->
 			<div class="news-4">
-				<div class="news-big-card">
-					<div class="news-big-image">
-						<img src="img/pexels-apostolos-vamvouras-2285500.jpg" alt="Мода" class="news-big-wallper">
-					</div>
-					<div class="news-big-wrapper">
-						<h4 class="news-1-title news-big-title">Мода</h4>
-						<p class="news-1-description news-big-description">Лучшее решение в покупке обуви &nbsp; как скидки помогают собрать базовый гардероб</p>
-						<a href="#" class="news-read">Читать</a>
-					</div>
-				</div>
-				<!-- /.news-big-card -->
 
-				<div class="news-big-card">
-					<div class="news-big-image">
-						<img src="img/pexels-apostolos-vamvouras-2285500.jpg" alt="Мода" class="news-big-wallper">
-					</div>
-					<div class="news-big-wrapper">
-						<h4 class="news-1-title news-big-title">Мода</h4>
-						<p class="news-1-description news-big-description">Лучшее решение в покупке обуви &nbsp; как скидки помогают собрать базовый гардероб</p>
-						<a href="#" class="news-read">Читать</a>
-					</div>
-				</div>
-				<!-- /.news-big-card -->
+				<!-- Здесь добавляются новости -->
+
 			</div>
 			<!-- /.news-4 -->
 		</div>
@@ -246,10 +261,21 @@
 			</div>
         </footer>
 
-            	
+		<div class="autorization" id='autorization'>
+			<div class="login">
+				<form class="login-form">
+					<h2 class="login-title">Авторизация</h2>
+					<input class="login-input login-email" name="email" type="email" minlength="3" required placeholder="Введите email">
+					<input class="login-input login-password" name="password" type="password" minlength="3" required placeholder="Введите пароль">
+					<a href="#" class="login-forget">Забыли пароль?</a>
+					<button class="login-signin" id="enter-btn" onclick="enter()" type="submit">Войти</button>
+					<a href="#" class="login-signup">Регистрация</a>
+				</form>
+				<!-- /.login-form -->
+			</div>
+			<!-- /.login -->
+		</div>
+		<!-- /.autorization -->
 
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="js/jquery-3.6.0.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+	</body>		
 </html>
